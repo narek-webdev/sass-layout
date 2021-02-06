@@ -1,0 +1,42 @@
+@import './base';
+@import './layout';
+@import './components';
+
+// @function weight($weight-name) {
+//     @return map-get($font-weight, $weight-name);
+// }
+// @mixin flex-center ($direction){
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+
+// @mixin theme ($light-theme: true) {
+//     @if $light-theme {
+//         background-color: $primary-color;
+//         color: $dark-color;
+//     } @else {
+//         background-color: $dark-color;
+//         color: $primary-color
+//     }
+// }
+
+// body {
+//     @include theme(true);
+// }
+
+// .main {
+//     @include flex-center(row);
+//     width: 80%;
+//     margin: 0 auto;
+
+//     &__paragraph {
+//         font-weight: weight(bold);
+
+//         &:hover {
+//             color: $text-color;
+//         }
+//     }
+
+// }
