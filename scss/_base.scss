@@ -1,3 +1,18 @@
+$primary-color: #137ED9;
+$white-color: #fff;
+
+@mixin header {
+    color: #585b60;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 48px;
+    margin-top: 48px;
+    padding: 0 10px;
+    position: relative;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;

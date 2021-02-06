@@ -1,0 +1,54 @@
+
+@media (max-width: 750px) {
+    .nav__list {
+        display: none;
+    }
+
+    .nav__icon {
+        display: block !important;
+    }
+
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    .feature {
+        flex-wrap: wrap;
+    }
+
+    .feature__image {
+        height: auto;
+    }
+
+   .testimonial__description {
+       width: 100%;
+   }
+}
+
+@media (max-width: 500px) {
+    .home__title {
+        font-size: 32px;
+    }
+
+    .home__image {
+        width: 100%;
+    }
+
+    .services__container {
+        padding: 30px 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .feature__container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature__title {
+        font-size: 30px;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+}

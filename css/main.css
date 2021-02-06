@@ -5,6 +5,54 @@
   margin: 0;
 }
 
+@media (max-width: 750px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__icon {
+    display: block !important;
+  }
+  .services__container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .feature {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feature__image {
+    height: auto;
+  }
+  .testimonial__description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home__title {
+    font-size: 32px;
+  }
+  .home__image {
+    width: 100%;
+  }
+  .services__container {
+    padding: 30px 50px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .feature__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .feature__title {
+    font-size: 30px;
+  }
+  .header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .home {
   background: #f8f9fb;
   color: #fff;
@@ -17,13 +65,16 @@
 }
 
 .home__title {
-  padding: 100px 0px 0px;
-  text-align: center;
   color: #585b60;
-  font-size: 34px;
-  line-height: 48px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 48px;
+  margin-top: 48px;
+  padding: 0 10px;
+  position: relative;
+  padding: 80px 0px 0px !important;
 }
 
 .home__button {
@@ -317,53 +368,5 @@
 .dots__item--active {
   background: #137ED9;
   border-color: #137ED9;
-}
-
-@media (max-width: 750px) {
-  .nav__list {
-    display: none;
-  }
-  .nav__icon {
-    display: block !important;
-  }
-  .services__container {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .feature {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .feature__image {
-    height: auto;
-  }
-  .testimonial__description {
-    width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .home__title {
-    font-size: 32px;
-  }
-  .home__image {
-    width: 100%;
-  }
-  .services__container {
-    padding: 30px 50px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .feature__container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .feature__title {
-    font-size: 30px;
-  }
-  .header {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
 }
 /*# sourceMappingURL=main.css.map */

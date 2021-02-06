@@ -1,6 +1,6 @@
 .home {
     background: #f8f9fb;
-    color: #fff;
+    color: $white-color;
 
     &__content {
         display: grid;
@@ -8,23 +8,18 @@
     }
 
     &__title {
-        padding: 100px 0px 0px;
-        text-align: center;
-        color: #585b60;
-        font-size: 34px;
-        line-height: 48px;
-        font-weight: 700;
-        margin-bottom: 30px;
+        @include header;
+        padding: 80px 0px 0px !important;
     }
 
     &__button {
-        color: #fff;
+        color: $white-color;
         background-color: #4297e0;
         font-size: 14px;
         padding: 10px 30px;
         cursor: pointer;
         font-weight: 400;
-        color: #fff;
+        color: $white-color;
         border-radius: 30px;
         -webkit-transition: all 0.2s linear;
         transition: all 0.2s linear;
@@ -44,9 +39,9 @@
     align-items: center;
 }
 
-.nav {
+.nav {    
     &__icon {
-        color: #137ED9;
+        color: $primary-color;
         font-size: 25px;
         display: none !important;
         cursor: pointer;
@@ -68,26 +63,18 @@
         transition: all 0.3s ease-out 0s;
 
         &:hover {
-            color: #137ED9;
+            color: $primary-color;
         }
     }
 
     &__link--active {
-        color: #137ED9;
+        color: $primary-color;
     }
 }
 
 .services {
     &__title {
-        color: #585b60;
-        font-size: 38px;
-        text-align: center;
-        letter-spacing: 1px;
-        line-height: 1;
-        margin-bottom: 48px;
-        margin-top: 48px;
-        padding: 0 10px;
-        position: relative;
+        @include header;
     }
 
     &__container {
@@ -99,7 +86,7 @@
 
     &__icon {
         font-size: 42px;
-        color: #137ED9;
+        color: $primary-color;
     }
 
     &__item-title {
@@ -133,7 +120,7 @@
     }
 
     &__icon {
-        color: #137ED9;
+        color: $primary-color;
         font-size: 30px;
         margin-bottom: 20px;
     }
@@ -162,15 +149,7 @@
 .team {
     
     &__title {
-        color: #585b60;
-        font-size: 38px;
-        text-align: center;
-        letter-spacing: 1px;
-        line-height: 1;
-        margin-bottom: 48px;
-        margin-top: 48px;
-        padding: 0 10px;
-        position: relative;
+        @include header;
     }
 
     &__container {
@@ -217,12 +196,12 @@
     &__social-icon {
         font-size: 35px;
         padding-left: 20px;
-        color: #137ED9;
+        color: $primary-color;
     }
 
     &__info {
         padding: 15px 20px;
-        background: #fff;
+        background: $white-color;
         text-align: center;
     }
 
@@ -259,7 +238,7 @@
     }
 
     &__name {
-        color: #137ED9;
+        color: $primary-color;
         font-weight: 700;
         font-size: 22px;
         padding-bottom: 5px;
@@ -267,7 +246,7 @@
 
     &__street {
         font-size: 15px;
-        color: #fff;
+        color: $white-color;
     }
 }
 
@@ -282,66 +261,12 @@
         margin: 2px 4px;
         opacity: 1;
         border-radius: 30px;
-        background: #fff;
-        border: 2px solid #fff;
+        background: $white-color;
+        border: 2px solid $white-color;
 
         &--active {
-            background: #137ED9;
-            border-color: #137ED9;
+            background: $primary-color;
+            border-color: $primary-color;
         }
-    }
-}
-
-@media (max-width: 750px) {
-    .nav__list {
-        display: none;
-    }
-
-    .nav__icon {
-        display: block !important;
-    }
-
-    .services__container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    
-    .feature {
-        flex-wrap: wrap;
-    }
-
-    .feature__image {
-        height: auto;
-    }
-
-   .testimonial__description {
-       width: 100%;
-   }
-}
-
-@media (max-width: 500px) {
-    .home__title {
-        font-size: 32px;
-    }
-
-    .home__image {
-        width: 100%;
-    }
-
-    .services__container {
-        padding: 30px 50px;
-        grid-template-columns: 1fr;
-    }
-
-    .feature__container {
-        grid-template-columns: 1fr;
-    }
-
-    .feature__title {
-        font-size: 30px;
-    }
-
-    .header {
-        justify-content: space-around;
     }
 }
