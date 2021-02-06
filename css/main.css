@@ -139,6 +139,7 @@
 }
 
 .feature__title {
+  padding-bottom: 30px;
   font-size: 40px;
   margin-bottom: 30px;
 }
