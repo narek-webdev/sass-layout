@@ -108,7 +108,8 @@
   padding: 50px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
 
@@ -326,7 +327,7 @@
   }
   .services__container {
     -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
   }
   .feature {
     -ms-flex-wrap: wrap;
@@ -358,6 +359,10 @@
   }
   .feature__title {
     font-size: 30px;
+  }
+  .header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=main.css.map */
