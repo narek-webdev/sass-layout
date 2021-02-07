@@ -24,6 +24,10 @@
    .testimonial__description {
        width: 100%;
    }
+
+   .price {
+       grid-template-columns: repeat(2, 1fr);
+   }
 }
 
 @media (max-width: 500px) {
@@ -50,5 +54,9 @@
 
     .header {
         justify-content: space-around;
+    }
+
+    .price {
+        grid-template-columns: 1fr;
     }
 }

@@ -270,3 +270,137 @@
         }
     }
 }
+
+// Start Price Code
+.price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin: 60px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    &__item {
+        padding: 50px;
+        width: 100%;
+        box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
+        transition: 1s;
+
+        &:hover {
+            background: rgba(19, 126, 217, 0.06); 
+        }
+    }
+
+    &__item--active {
+        background: rgba(19, 126, 217, 0.06);
+    }
+
+    &__category {
+        font-size: 21px;
+        color: $primary-color;
+        text-align: center;
+        padding-bottom: 40px;
+        font-weight: 700;
+    }
+
+    &__number {
+        text-align: center;
+        font-size: 29px;
+        font-weight: 700;
+    }
+
+    &__date {
+        font-size: 15px;
+    }
+
+    &__description {
+        padding-top: 40px;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    &__list {
+        font-size: 16px;
+        font-weight: 400;
+        color: #abacae;
+        padding-bottom: 15px;
+    }
+
+    &__button {
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        font-size: 14px;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-weight: 400;
+        color: #fff;
+        border-radius: 30px;
+
+        margin-top: 60px;
+        margin-bottom: 30px;
+
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+.free {
+    padding: 50px;
+    margin-bottom: 100px;
+    background-color: #f8f9fb;
+
+    &__title {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    &__description {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: #abacae;
+    }
+
+    &__input {
+        outline: none;
+        position: relative;
+        width: 400px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        border-radius: 50px;
+        position: relative;
+        height: 52px;
+        border: 1px solid #137ED9;
+        transition: all 0.3s;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    &__button {
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        outline: none;
+        
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    &__icon {
+        width: 48px;
+        height: 48px;
+        background: #137ED9;
+        cursor: pointer;
+        display: block !important;
+        color: #fff;
+        line-height: 48px !important;
+        border-radius: 50%;
+    }
+}
