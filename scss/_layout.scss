@@ -1,3 +1,9 @@
+@media (max-width: 1000px) {
+   .footer {
+        display: grid;
+        gap: 40px;
+    }
+}
 
 @media (max-width: 750px) {
     .nav__list {
@@ -58,5 +64,26 @@
 
     .price {
         grid-template-columns: 1fr;
+        padding-top: 0px;
+    }
+
+    .footer__text {
+        width: 100%;
+    }
+
+    .footer__list--flex {
+        display: inline-flex;
+    }
+
+    .free__input {
+        width: 100%;
+    }
+
+    .contact__flex {
+        flex-wrap: wrap;
+    }
+
+    .contact__item--bottom {
+        margin-top: 40px;
     }
 }
